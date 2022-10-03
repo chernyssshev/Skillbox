@@ -12,3 +12,4 @@ if check_coordinate(coordinate_x, coordinate_y, area):
     print('Монетки в области нет.')
 else:
     print('Монетка где-то рядом.')
+    
