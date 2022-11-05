@@ -1,0 +1,119 @@
+.wrapper {
+    margin: 30px 20px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px dashed rgb(51, 51, 51);
+}
+
+.block {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.wrapper1 {
+    text-align: center;
+}
+
+.wrapper1 .block {
+    display: inline-block;
+    height: 100px;
+    width: 30%;
+    background-color: #15e696;
+}
+
+.wrapper2 .block {
+    height: 100px;
+    width: 100px;
+}
+
+.wrapper2 .block1 {
+    position: absolute;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 35px,
+    rgba(135, 130, 130, 0.5) 35px,
+    rgba(139, 135, 135, 0.5) 70px);
+    background-color: #eee;
+}
+
+.wrapper2 .block2 {
+    position: relative;
+    background-image: repeating-linear-gradient(135deg, transparent, transparent 35px,
+    rgba(121, 117, 117, 0.5) 35px,
+    rgba(127, 125, 125, 0.5) 70px);
+    background-color: rgba(232, 210, 210, 0.5);
+}
+
+.wrapper3 .block {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: #74a841;
+    margin: 10px;
+}
+
+.wrapper3 .block3 {
+    position: relative;
+    bottom: 25px;
+    left: 25px;
+}
+
+.wrapper4 {
+    visibility: hidden;
+    position: fixed;
+    bottom: 50px;
+    right: 28px;
+}
+
+.button {
+    border: 2px solid rgb(249, 167, 14);
+    border-radius: 20px;
+    background-color: rgb(253, 242, 242);
+    font-size: 19px;
+    padding: 5px 15px;
+    visibility: visible;
+}
+
+.wrapper5 {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrapper5 .block {
+    height: 100px;
+    width: 30%;
+    flex-grow: 1;
+    background-color: #15d88d;;
+}
+
+.wrapper6 {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.wrapper6 .block {
+    width: 100px;
+    height: 100px;
+    background-color: #86ca97;
+}
+
+.wrapper6 .block3 {
+    order: 1;
+    background-color: #58859f; 
+}
+
+.wrapper7 {
+    display: flex;
+}
+
+.wrapper7 .menu {
+    flex: none;
+    display: inline-block;
+    width: 200px;
+    background-color: rgb(238, 202, 202);
+    line-height: 1.8;
+    margin-right: 30px;
+}
+
+.wrapper7 ul {
+    list-style: none;
+}

@@ -1,0 +1,39 @@
+.blocks > div {
+    border: 1px solid;
+    min-height: 30px;
+    margin: 10px;
+}
+
+.blocks .block1 {
+    display: none;
+}
+
+.blocks .block2, .block3 {
+    width: 120px;
+    display: inline-block;
+}
+
+.blocks .block4 {
+    height: 100px;
+}
+
+.blocks .block5 {
+    margin: 50px auto;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    padding: 55px 40px 0;
+    box-sizing: border-box;
+}
+
+.blocks .block6 {
+    border: 5px dotted purple;
+}
+
+.blocks .block7 {
+    border: 40px solid transparent;
+    width: 0;
+    height: 0;
+    border-top: 40px solid green;
+    color: transparent;
+}

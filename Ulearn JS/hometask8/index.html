@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Домашняя работа №8</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Владимир</td>
+            <td>25</td>
+            <td>фронтендер</td>
+            <td>Екатеринбург</td>
+        </tr>
+        <tr>
+            <td>Екатерина</td>
+            <td>22</td>
+            <td>бекендер</td>
+            <td>Екатеринбург</td>
+        </tr>
+        <tr>
+            <td>Надежда</td>
+            <td>31</td>
+            <td>аналитик</td>
+            <td>Москва</td>
+        </tr>
+        <tr>
+            <td>Евгений</td>
+            <td>34</td>
+            <td>тестировщик</td>
+            <td>Санкт-Петербург</td>
+        </tr>
+    </table>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Кличка</th>
+            <th>Тип животного</th>
+            <th>Пол</th>
+            <th>Имя хозяина</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Барон</td>
+            <td>Собака, бульдог</td>
+            <td>m</td>
+            <td>Валерий</td>
+        </tr>
+        <tr>
+            <td>Снежинка</td>
+            <td>Кошка, персидская</td>
+            <td>f</td>
+            <td>Наталья</td>
+        </tr>
+        <tr>
+            <td>Дьявол</td>
+            <td>Кошка, сфинкс</td>
+            <td>m</td>
+            <td>Дмитрий</td>
+        </tr>
+        </tbody>
+    </table>
+ 
+    <table>
+        <thead>
+        <tr>
+            <th rowspan="2">Участок</th>
+            <th rowspan="2">Врач</th>
+            <th colspan="3">Количество</th>
+        </tr>
+        <tr>
+            <th>Детей</th>
+            <th>Женщин</th>
+            <th>Мужчин</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>2546</td>
+            <td>Иванова</td>
+            <td class="table3_1">34</td>
+            <td class="table3_2">126</td>
+            <td class="table3_3">105</td>
+        </tr>
+        <tr>
+            <td>3376</td>
+            <td>Дмитриев</td>
+            <td class="table3_1">59</td>
+            <td class="table3_2">230</td>
+            <td class="table3_3">198</td>
+        </tr>
+        <tr>
+            <td>9845</td>
+            <td>Васильев</td>
+            <td class="table3_1">12</td>
+            <td class="table3_2">73</td>
+            <td class="table3_3">106</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td colspan="2">Итого</td>
+            <td class="table3_1_result"></td>
+            <td class="table3_2_result"></td>
+            <td class="table3_3_result"></td>
+        </tr>
+        </tfoot>
+    </table>
+    
+    <script>
+        let child = document.querySelectorAll(".table3_1");
+        let female = document.querySelectorAll(".table3_2");
+        let male = document.querySelectorAll(".table3_3");
+        let resultChild = document.querySelector(".table3_1_result");
+        let resultFemale = document.querySelector(".table3_2_result");
+        let resultMale = document.querySelector(".table3_3_result");
+
+        resultChild.textContent = sum(child);
+        resultFemale.textContent = sum(female);
+        resultMale.textContent = sum(male);
+
+        function sum(items) {
+            let result = 0;
+            for (let item of items) {
+                result += +item.textContent;
+            }
+            return result;
+        }
+    </script>
+ 
+    
+        <p>
+            <label><input type="radio" name="sex" value="male">Мужчина</label>
+            <label><input type="radio" name="sex" value="female">Женщина</label>
+			<label><input type="radio" name="sex" value="none">Не решил еще</label>
+        </p>
+        
+        <label name="fav_animals_title">Ваше любимое животное
+            <select name="fav_animals_selector">
+                <option value="fav_animal_cat" selected>Кошка</option>
+                <option value="fav_animal_dog">Собака</option>
+                <option value="fav_animal_lizard">Ящерица</option>
+            </select>
+        </label>
+    
+        <label name="information_diller">Откуда вы о нас узнали?
+            <textarea name="information_diller_text"></textarea>
+        </label>
+    
+        <label>
+            <input type="checkbox" checked disabled>
+            Я согласен с условиями и готов продать душу дьяволу!
+        </label>
+    
+        <label>
+            <input type="submit" value="Зарегистрироваться">
+        </label>
+    </form>
+</body>
+</html>
