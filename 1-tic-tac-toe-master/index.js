@@ -10,7 +10,6 @@ let clickCounter = 0
 let checkWin = false
 const possibleClicksCount = gameField.length * gameField.length
 
-
 startGame();
 addResetListener();
 
@@ -53,7 +52,7 @@ function renderGrid (dimension) {
 }
 
 function checkWinner(gameField){
-    
+
     const crossWin=()=>{
         alert(`${CROSS} победил`)
         checkWin = true
